@@ -32,6 +32,7 @@ setValidity("poly", function(object) {
 ##'   6x^2$).
 ##' @return A new \code{poly} object
 ##' @export
+##' @importFrom methods new
 make_poly <- function(...) {
   coeffs <- list(...)
   if (length(coeffs) == 1 & is.null(names(coeffs))) {
@@ -57,13 +58,14 @@ make_poly <- function(...) {
   values <- values[zeros]
   powers <- powers[zeros]
 
-  return(new("poly", values, powers = powers))
+  return(methods::new("poly", values, powers = powers))
 }
 
 ##' @title Show a \code{poly} object
 ##' @param object A \code{poly} object
 ##' @return \code{object}, invisibly.
 ##' @export
+##' @importFrom methods show
 setMethod("show", "poly",
   function(object) {
 

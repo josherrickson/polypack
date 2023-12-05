@@ -5,6 +5,7 @@
 ##' @return \code{poly} object
 ##' @export
 ##' @rdname poly_poly_math
+##' @importFrom methods new
 setMethod("+", signature(e1 = "poly",
                          e2 = "poly"),
 {
@@ -36,7 +37,7 @@ setMethod("+", signature(e1 = "poly",
     val <- val[order]
     pow <- pow[order]
 
-    return(new("poly", val, powers = pow))
+    return(methods::new("poly", val, powers = pow))
   }
 })
 

@@ -17,6 +17,8 @@ ggplot_poly(poly, from = 0, to = 1, ...)
 \item{to}{right side of range to plot}
 
 \item{from}{left side of range to plot}
+
+\item{...}{Add'l arguments to \code{plot}}
 }
 \value{
 The plot

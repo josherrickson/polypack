@@ -3,6 +3,7 @@
 ##' @param y alias for \code{from} for compatibility with \code{plot}
 ##' @param to right side of range to plot
 ##' @param from left side of range to plot
+##' @param ... Add'l arguments to \code{plot}
 ##' @return The plot
 ##' @export
 ##' @rdname poly-plotting
@@ -25,6 +26,7 @@ ggplot_poly <- function(poly, from = 0, to = 1, ...) {
                              to = to,
                              length.out = 100))
   data$y <- eval_poly(poly, data$x)
-  ggplot(data = data, aes(x = x, y = y)) +
-    geom_line(...)
+  ggplot2::ggplot(data = data,
+                  ggplot2::aes(x = data$x, y = data$y)) +
+    ggplot2::geom_line(...)
 }

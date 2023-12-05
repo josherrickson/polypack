@@ -4,13 +4,18 @@ Title: Working with polynomial expressions
 Version: 0.1.0
 Authors@R: c(person("Josh", "Errickson", email = "jerrick@umich.edu", role = c("aut", "cre")),
              person("Sally", "Smith", email = "smith@umcih.edu", role = "aut"))
-Description: Allows creation, algebra and plotting of polynomial expressions
+Description: Allows creation, algebra and plotting of polynomial expressions.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
 Suggests: 
-    testthat (>= 3.0.0)
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0),
+    ggplot2
 Config/testthat/edition: 3
 Depends: 
-    R (>= 2.10)
+    R (>= 2.10),
+    methods
+VignetteBuilder: knitr

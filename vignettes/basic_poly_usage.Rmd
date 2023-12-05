@@ -1,0 +1,24 @@
+---
+title: "Basic poly usage"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Basic poly usage}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(polypack)
+```
+
+```{r}
+p1 <- make_poly("3" = 1, "2" = -4)
+plot(p1, -5, 5)
+```
