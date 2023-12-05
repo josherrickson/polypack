@@ -1,0 +1,10 @@
+Package: polypack
+Type: Package
+Title: Working with polynomial expressions
+Version: 0.1.0
+Authors@R: c(person("Josh", "Errickson", email = "jerrick@umich.edu", role = c("aut", "cre")),
+             person("Sally", "Smith", email = "smith@umcih.edu", role = "aut"))
+Description: Allows creation, algebra and plotting of polynomial expressions
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
