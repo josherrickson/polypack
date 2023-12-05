@@ -9,10 +9,7 @@
 \alias{+,numeric,poly-method}
 \alias{-,poly,numeric-method}
 \alias{-,numeric,poly-method}
-\title{\code{poly} and numeric arithmetic
-
-poly/numeric is not supported. Other operations are supported. Exactly one
-of \code{e1} or \code{e2} should be \code{poly}.}
+\title{\code{poly} and numeric arithmetic}
 \usage{
 \S4method{*}{poly,numeric}(e1, e2)
 
@@ -40,7 +37,8 @@ of \code{e1} or \code{e2} should be \code{poly}.}
 }
 \description{
 \code{poly} and numeric arithmetic
-
+}
+\details{
 poly/numeric is not supported. Other operations are supported. Exactly one
 of \code{e1} or \code{e2} should be \code{poly}.
 }

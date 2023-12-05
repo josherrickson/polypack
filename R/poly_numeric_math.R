@@ -4,8 +4,7 @@
 }
 
 ##' @title \code{poly} and numeric arithmetic
-##'
-##' poly/numeric is not supported. Other operations are supported. Exactly one
+##' @details poly/numeric is not supported. Other operations are supported. Exactly one
 ##' of \code{e1} or \code{e2} should be \code{poly}.
 ##' @param e1 \code{poly} or \code{numeric}.
 ##' @param e2 \code{poly} or \code{numeric}.

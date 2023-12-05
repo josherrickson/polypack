@@ -5,9 +5,7 @@
 \alias{-,poly,poly-method}
 \alias{*,poly,poly-method}
 \alias{/,poly,poly-method}
-\title{\code{poly}-\code{poly} math
-
-Supports `+`, `-`, and `*`. Division not supported.}
+\title{\code{poly}-\code{poly} math}
 \usage{
 \S4method{+}{poly,poly}(e1, e2)
 
@@ -27,6 +25,7 @@ Supports `+`, `-`, and `*`. Division not supported.}
 }
 \description{
 \code{poly}-\code{poly} math
-
+}
+\details{
 Supports `+`, `-`, and `*`. Division not supported.
 }

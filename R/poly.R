@@ -24,13 +24,13 @@ setValidity("poly", function(object) {
   TRUE
 })
 
-##' @title Create a `poly` object
+##' @title Create a \code{poly} object
 ##' @param ... Named arguments where the name is the power, and the value is its
 ##'   corresponding coefficient. E.g. \code{"2" = 5} implies $5x^2$. If multiple
 ##'   arguments have the same power (e.g. \code{make_poly("2" = 1, "2" = 5)}),
 ##'   the coefficients will be summed (continuning example, $x^2 + 5x^2 =
 ##'   6x^2$).
-##' @return
+##' @return A new \code{poly} object
 ##' @export
 make_poly <- function(...) {
   coeffs <- list(...)

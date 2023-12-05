@@ -2,7 +2,7 @@
 % Please edit documentation in R/poly.R
 \name{make_poly}
 \alias{make_poly}
-\title{Create a `poly` object}
+\title{Create a \code{poly} object}
 \usage{
 make_poly(...)
 }
@@ -13,6 +13,9 @@ arguments have the same power (e.g. \code{make_poly("2" = 1, "2" = 5)}),
 the coefficients will be summed (continuning example, $x^2 + 5x^2 =
 6x^2$).}
 }
+\value{
+A new \code{poly} object
+}
 \description{
-Create a `poly` object
+Create a \code{poly} object
 }

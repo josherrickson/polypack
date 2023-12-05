@@ -1,6 +1,5 @@
 ##' @title \code{poly}-\code{poly} math
-##'
-##' Supports `+`, `-`, and `*`. Division not supported.
+##' @details Supports `+`, `-`, and `*`. Division not supported.
 ##' @param e1 \code{poly} object
 ##' @param e2 \code{poly} object
 ##' @return \code{poly} object
